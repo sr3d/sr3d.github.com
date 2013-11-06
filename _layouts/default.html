@@ -13,35 +13,43 @@
         <link rel="stylesheet" href="/css/main.css">
 
     </head>
-    <body>
+    <body data-stellar-background-ratio="0.1" data-stellar-horizontal-offset="" data-stellar-vertical-offset="60">
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            <div class="wrapper">
+              <img src="/img/panda-transparent.png" width="65" height="65"/>
+              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            </div>
           </div>
 
-          {{ content }}
+          <div class="content">
+            {{ content }}
+          </div>
 
           <div class="footer">
             <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
+              Find me on GitHub at <a href="https://github.com/sr3d">github.com/sr3d</a><br />
             </div>
           </div>
         </div>
 
-  
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="/js/jquery.stellar.min.js"></script>
+        <script>$.stellar()</script>
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-193384-4']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
 
     </body>
 </html>

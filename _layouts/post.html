@@ -2,14 +2,13 @@
 layout: default
 
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
+<h2 class="">{{ page.title }}
+    <span class="meta">{{ page.date | date_to_string }}</span>
+</h2>
 <div class="post">
 {{ content }}
 </div>
 
-{{page.comments}}
 {% if page.comments %}
 
   <div id="disqus_thread"></div>

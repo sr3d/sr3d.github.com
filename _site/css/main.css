@@ -14,7 +14,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  background: white url('/img/panda.png') no-repeat 0px -00px; background-attachment:fixed;
+  background: white url('/img/panda.png') no-repeat 50px 20px; background-attachment:fixed;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -26,9 +26,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
+a         { color: #cb0002; }
 a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a:visited { color: #cb0002; }
 
 /*****************************************************************************/
 /*
@@ -70,7 +70,9 @@ ul.posts span {
   
 }
 .site .header .wrapper {
-  float: left; width: 350px; background-color: #cb0002; height: 65px;
+  /*float: left; width: 350px; */
+  /*background-color: #cb0002;*/
+  /*height: 65px;*/
   /*overflow: auto;*/
   /*position: relative;*/
 
@@ -89,13 +91,15 @@ ul.posts span {
   display: inline-block;
   font-size: 250%;
   /*margin-bottom: 2em;*/
-  /*color: #f67b22;*/
-  color: white;
+  color: #f67b22;
+  /*color: white;*/
+  /*color: #cb0002;*/
 }
 
 .site .header h1.title a {
   /*color: #a00;*/
-  color: white;
+  /*color: white;*/
+  color: #cb0002;
 }
 
 .site .header h1.title a:hover {
